@@ -1,0 +1,19 @@
+<p>listado de Héroes</p>
+
+<div *ngIf=" heroeBorrado; else noBorrado "> <!-- me pide un true o false, si es true va a aparecer, como empieza siendo false, no aparece-->
+    <h3> Heroé Borrado: <small>{{ heroeBorrado }}</small></h3>
+</div>
+
+<ng-template #noBorrado>  <!--# >>  referencias locales, poniendo un temprate-->
+    <h3>No ha borrado nada.</h3>
+</ng-template>
+
+<button (click)="borrarHeroe()">
+    borrar
+</button>
+
+<ul>
+    <li *ngFor="let heroe of heroes; let i = index"> 
+        {{ i + 1 }} {{ heroe }}
+    </li>
+</ul>
