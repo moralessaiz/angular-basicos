@@ -1,0 +1,34 @@
+<!-- APUNTES
+1. Two Way Data Bining: Tanto emite como recibe eventos
+
+2. [(ngModel)]-> Quiero escuchar como emitir el evento
+3. Emitir o escuchar evento -> ()
+4. Establecer una propiedad al objeto -> [] ---  Ejemplo, [value] establece propiedad nuevo.poder al objeto input 
+5. Pipes: se usa el | y sive para tranformar visualmente la información -->
+
+<h1>Dragon Ball Z</h1>
+<hr/>
+
+<div class="row">
+    <div class="col">
+
+        <app-personajes></app-personajes> <!-- "personajes", son los que se encuentran en el main page -- con las [] le quiero asociar el valor de esa propiedad;; viene por el nombre en personajes.component.ts -->
+        <!-- <app-personajes [personajes]="personajes"></app-personajes>-->
+        <!-- <h3>Personajes</h3>
+        <hr/>
+        <ul>
+            <li *ngFor="let personaje of personajes">
+                {{ personaje.nombre }} - {{ personaje.poder | number }}
+            </li> -->
+                                <!-- <li>Krillin -700</li>
+                                <li>Goku - 15,000</li>
+                                <li>Vegeta - 8,500</li> -->
+        <!-- </ul> -->
+    </div>
+
+    <div class="col">
+        <app-agregar 
+            [nuevo]="nuevo"
+        ></app-agregar>
+        <!-- (onNuevoPersonaje)="agregarNuevoPersonaje( $event )" -->
+    </div>

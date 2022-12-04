@@ -1,0 +1,13 @@
+TRABAJO
+1. nuevo componente llamado 
+    agregar component
+
+2- <h3> agregar </h3> hasta </form>
+
+3- Mover Personaje y metodo de agregar()
+
+4- @Input personajes
+
+5- @input nuevo
+
+6- agregarle a main-page el <app-agregar>
